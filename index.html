@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jogo da da velha</title>
-    <h1 class="titulo">Jogo da velha</h1>
-    <div class="container">
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
-        <div>
-            <table class="jogo" border="2">
-                <tr>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                </tr>
-                <tr>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                </tr>
-                <tr>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                    <td class="quadrado" onclick="jogar(this)"></td>
-                </tr>
-            </table>
-            <button class="botao" onclick="reiniciar()"> Reiniciar </button>
-
-        </div>
-
-    </div>
+    <title>jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 class="titulo">Jogo da Velha</h1>
+    <div class="container">
+        <table class="jogo" border="2">
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+            <tr>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+                <td class="quadrado" onclick="jogar(this)"></td>
+            </tr>
+        </table>
+        <div class="scoreboard">
+            <p>Player X Score: <span id="playerXScore">0</span></p>
+            <p>Player O Score: <span id="playerOScore">0</span></p>
+        </div>
+        <button class="botao" onclick="reiniciar()">Reiniciar</button>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
